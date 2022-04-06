@@ -1,0 +1,24 @@
+combine (int argc)
+{
+  if (argc == 1) goto <D.2190>; else goto <D.2191>;
+  <D.2190>:
+  __builtin_puts (&"argc value is 1"[0]);
+  <D.2191>:
+}
+
+
+main (int argc, char * * argv)
+{
+  int D.2192;
+
+  {
+    combine (argc);
+    printf ("hello world");
+    D.2192 = 0;
+    return D.2192;
+  }
+  D.2192 = 0;
+  return D.2192;
+}
+
+

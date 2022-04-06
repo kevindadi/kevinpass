@@ -3,16 +3,14 @@
 //    HelloWorld.cpp
 //
 // DESCRIPTION:
-//    Visits all functions in a module, prints their names and the number of
-//    arguments via stderr. Strictly speaking, this is an analysis pass (i.e.
-//    the functions are not modified). However, in order to keep things simple
-//    there's no 'print' method here (every analysis pass should implement it).
+//    遍历所有在模块中的函数，打印它们的名字和参数通过stderr.严格来讲，这是一个分析pass，
+//    如这个函数并没有被修改. 所有的分析Pass必须实现print方法，此次使用err
 //
 // USAGE:
-//    1. Legacy PM
+//    1. 层次化插件管理器
 //      opt -load libHelloWorld.dylib -legacy-hello-world -disable-output `\`
 //        <input-llvm-file>
-//    2. New PM
+//    2. 新插件管理器
 //      opt -load-pass-plugin=libHelloWorld.dylib -passes="hello-world" `\`
 //        -disable-output <input-llvm-file>
 //
@@ -29,19 +27,20 @@ using namespace llvm;
 //-----------------------------------------------------------------------------
 // HelloWorld implementation
 //-----------------------------------------------------------------------------
-// No need to expose the internals of the pass to the outside world - keep
-// everything in an anonymous namespace.
+// 不需要向外部暴露借口，尽在匿名类内部实现
 namespace {
 
-// This method implements what the pass does
+// 这个方法实现这个Pass做了什么
 void visitor(Function &F) {
-    errs() << "(llvm-tutor) Hello from: "<< F.getName() << "\n";
-    errs() << "(llvm-tutor)   number of arguments: " << F.arg_size() << "\n";
+    errs() << "(Kevin-Petri) Function from: "<< F.getName() << "\n";
+    errs() << "(Kevin-Petri)   number of arguments: " << F.arg_size() << "\n";
 }
 
-// New PM implementation
+// class Kevin : PassInfoMixin<Hll
+
+  // 新插件管理器实现
 struct HelloWorld : PassInfoMixin<HelloWorld> {
-  // Main entry point, takes IR unit to run the pass on (&F) and the
+  // 主entry点, 将IR单元代入Pass on (&F) and the
   // corresponding pass manager (to be queried if need be)
   PreservedAnalyses run(Function &F, FunctionAnalysisManager &) {
     visitor(F);

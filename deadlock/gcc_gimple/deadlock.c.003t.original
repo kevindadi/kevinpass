@@ -1,0 +1,1225 @@
+
+;; Function __bswap_16 (null)
+;; enabled by -tree-original
+
+@1      bind_expr        type: @2       body: @3      
+@2      void_type        name: @4       algn: 8       
+@3      return_expr      type: @2       expr: @5      
+@4      type_decl        name: @6       type: @2      
+@5      modify_expr      type: @7       op 0: @8       op 1: @9      
+@6      identifier_node  strg: void     lngt: 4       
+@7      integer_type     name: @10      unql: @11      size: @12     
+                         algn: 16       prec: 16       sign: unsigned 
+                         min : @13      max : @14     
+@8      result_decl      type: @7       scpe: @15      srcp: byteswap.h:34     
+                         note: artificial              size: @12     
+                         algn: 16      
+@9      nop_expr         type: @7       op 0: @16     
+@10     type_decl        name: @17      type: @7       srcp: types.h:40     
+@11     integer_type     name: @18      size: @12      algn: 16      
+                         prec: 16       sign: unsigned min : @13     
+                         max : @14     
+@12     integer_cst      type: @19     int: 16
+@13     integer_cst      type: @11     int: 0
+@14     integer_cst      type: @11     int: -1
+@15     function_decl    name: @20      type: @21      srcp: byteswap.h:34     
+                         args: @22      link: static  
+@16     call_expr        type: @11      fn  : @23      0   : @24     
+@17     identifier_node  strg: __uint16_t              lngt: 10      
+@18     type_decl        name: @25      type: @11     
+@19     integer_type     name: @26      size: @27      algn: 128     
+                         prec: 128      sign: unsigned min : @28     
+                         max : @29     
+@20     identifier_node  strg: __bswap_16              lngt: 10      
+@21     function_type    size: @30      algn: 8        retn: @7      
+                         prms: @31     
+@22     parm_decl        name: @32      type: @7       scpe: @15     
+                         srcp: byteswap.h:34           argt: @33     
+                         size: @12      algn: 16       used: 1       
+@23     addr_expr        type: @34      op 0: @35     
+@24     nop_expr         type: @33      op 0: @22     
+@25     identifier_node  strg: short unsigned int      lngt: 18      
+@26     identifier_node  strg: bitsizetype             lngt: 11      
+@27     integer_cst      type: @19     int: 128
+@28     integer_cst      type: @19     int: 0
+@29     integer_cst      type: @19     int: -1
+@30     integer_cst      type: @19     int: 8
+@31     tree_list        valu: @7       chan: @36     
+@32     identifier_node  strg: __bsx    lngt: 5       
+@33     integer_type     name: @37      size: @38      algn: 32      
+                         prec: 32       sign: signed   min : @39     
+                         max : @40     
+@34     pointer_type     size: @41      algn: 64       ptd : @42     
+@35     function_decl    name: @43      type: @44      srcp: <built-in>:0      
+                         body: undefined               link: extern  
+@36     tree_list        valu: @2      
+@37     type_decl        name: @45      type: @33     
+@38     integer_cst      type: @19     int: 32
+@39     integer_cst      type: @33     int: -2147483648
+@40     integer_cst      type: @33     int: 2147483647
+@41     integer_cst      type: @19     int: 64
+@42     function_type    qual: c        unql: @44      size: @30     
+                         algn: 8        retn: @11      prms: @46     
+@43     identifier_node  strg: __builtin_bswap16       lngt: 17      
+@44     function_type    size: @30      algn: 8        retn: @11     
+                         prms: @46     
+@45     identifier_node  strg: int      lngt: 3       
+@46     tree_list        valu: @11      chan: @36     
+
+
+;; Function __bswap_32 (null)
+;; enabled by -tree-original
+
+@1      bind_expr        type: @2       body: @3      
+@2      void_type        name: @4       algn: 8       
+@3      return_expr      type: @2       expr: @5      
+@4      type_decl        name: @6       type: @2      
+@5      modify_expr      type: @7       op 0: @8       op 1: @9      
+@6      identifier_node  strg: void     lngt: 4       
+@7      integer_type     name: @10      unql: @11      size: @12     
+                         algn: 32       prec: 32       sign: unsigned 
+                         min : @13      max : @14     
+@8      result_decl      type: @7       scpe: @15      srcp: byteswap.h:49     
+                         note: artificial              size: @12     
+                         algn: 32      
+@9      nop_expr         type: @7       op 0: @16     
+@10     type_decl        name: @17      type: @7       srcp: types.h:42     
+@11     integer_type     name: @18      size: @12      algn: 32      
+                         prec: 32       sign: unsigned min : @13     
+                         max : @14     
+@12     integer_cst      type: @19     int: 32
+@13     integer_cst      type: @11     int: 0
+@14     integer_cst      type: @11     int: -1
+@15     function_decl    name: @20      type: @21      srcp: byteswap.h:49     
+                         args: @22      link: static  
+@16     call_expr        type: @11      fn  : @23      0   : @22     
+@17     identifier_node  strg: __uint32_t              lngt: 10      
+@18     type_decl        name: @24      type: @11     
+@19     integer_type     name: @25      size: @26      algn: 128     
+                         prec: 128      sign: unsigned min : @27     
+                         max : @28     
+@20     identifier_node  strg: __bswap_32              lngt: 10      
+@21     function_type    size: @29      algn: 8        retn: @7      
+                         prms: @30     
+@22     parm_decl        name: @31      type: @7       scpe: @15     
+                         srcp: byteswap.h:49           argt: @7      
+                         size: @12      algn: 32       used: 1       
+@23     addr_expr        type: @32      op 0: @33     
+@24     identifier_node  strg: unsigned int            lngt: 12      
+@25     identifier_node  strg: bitsizetype             lngt: 11      
+@26     integer_cst      type: @19     int: 128
+@27     integer_cst      type: @19     int: 0
+@28     integer_cst      type: @19     int: -1
+@29     integer_cst      type: @19     int: 8
+@30     tree_list        valu: @7       chan: @34     
+@31     identifier_node  strg: __bsx    lngt: 5       
+@32     pointer_type     size: @35      algn: 64       ptd : @36     
+@33     function_decl    name: @37      type: @38      srcp: <built-in>:0      
+                         body: undefined               link: extern  
+@34     tree_list        valu: @2      
+@35     integer_cst      type: @19     int: 64
+@36     function_type    qual: c        unql: @38      size: @29     
+                         algn: 8        retn: @11      prms: @39     
+@37     identifier_node  strg: __builtin_bswap32       lngt: 17      
+@38     function_type    size: @29      algn: 8        retn: @11     
+                         prms: @39     
+@39     tree_list        valu: @11      chan: @34     
+
+
+;; Function __bswap_64 (null)
+;; enabled by -tree-original
+
+@1      bind_expr        type: @2       body: @3      
+@2      void_type        name: @4       algn: 8       
+@3      return_expr      type: @2       expr: @5      
+@4      type_decl        name: @6       type: @2      
+@5      modify_expr      type: @7       op 0: @8       op 1: @9      
+@6      identifier_node  strg: void     lngt: 4       
+@7      integer_type     name: @10      unql: @11      size: @12     
+                         algn: 64       prec: 64       sign: unsigned 
+                         min : @13      max : @14     
+@8      result_decl      type: @7       scpe: @15      srcp: byteswap.h:70     
+                         note: artificial              size: @12     
+                         algn: 64      
+@9      nop_expr         type: @7       op 0: @16     
+@10     type_decl        name: @17      type: @7       srcp: types.h:45     
+@11     integer_type     name: @18      size: @12      algn: 64      
+                         prec: 64       sign: unsigned min : @13     
+                         max : @14     
+@12     integer_cst      type: @19     int: 64
+@13     integer_cst      type: @11     int: 0
+@14     integer_cst      type: @11     int: -1
+@15     function_decl    name: @20      type: @21      srcp: byteswap.h:70     
+                         args: @22      link: static  
+@16     call_expr        type: @11      fn  : @23      0   : @22     
+@17     identifier_node  strg: __uint64_t              lngt: 10      
+@18     type_decl        name: @24      type: @11     
+@19     integer_type     name: @25      size: @26      algn: 128     
+                         prec: 128      sign: unsigned min : @27     
+                         max : @28     
+@20     identifier_node  strg: __bswap_64              lngt: 10      
+@21     function_type    size: @29      algn: 8        retn: @7      
+                         prms: @30     
+@22     parm_decl        name: @31      type: @7       scpe: @15     
+                         srcp: byteswap.h:70           argt: @7      
+                         size: @12      algn: 64       used: 1       
+@23     addr_expr        type: @32      op 0: @33     
+@24     identifier_node  strg: long unsigned int       lngt: 17      
+@25     identifier_node  strg: bitsizetype             lngt: 11      
+@26     integer_cst      type: @19     int: 128
+@27     integer_cst      type: @19     int: 0
+@28     integer_cst      type: @19     int: -1
+@29     integer_cst      type: @19     int: 8
+@30     tree_list        valu: @7       chan: @34     
+@31     identifier_node  strg: __bsx    lngt: 5       
+@32     pointer_type     size: @12      algn: 64       ptd : @35     
+@33     function_decl    name: @36      type: @37      srcp: <built-in>:0      
+                         body: undefined               link: extern  
+@34     tree_list        valu: @2      
+@35     function_type    qual: c        unql: @37      size: @29     
+                         algn: 8        retn: @11      prms: @38     
+@36     identifier_node  strg: __builtin_bswap64       lngt: 17      
+@37     function_type    size: @29      algn: 8        retn: @11     
+                         prms: @38     
+@38     tree_list        valu: @11      chan: @34     
+
+
+;; Function __uint16_identity (null)
+;; enabled by -tree-original
+
+@1      bind_expr        type: @2       body: @3      
+@2      void_type        name: @4       algn: 8       
+@3      return_expr      type: @2       expr: @5      
+@4      type_decl        name: @6       type: @2      
+@5      modify_expr      type: @7       op 0: @8       op 1: @9      
+@6      identifier_node  strg: void     lngt: 4       
+@7      integer_type     name: @10      unql: @11      size: @12     
+                         algn: 16       prec: 16       sign: unsigned 
+                         min : @13      max : @14     
+@8      result_decl      type: @7       scpe: @15      srcp: uintn-identity.h:33     
+                         note: artificial              size: @12     
+                         algn: 16      
+@9      parm_decl        name: @16      type: @7       scpe: @15     
+                         srcp: uintn-identity.h:33     argt: @17     
+                         size: @12      algn: 16       used: 1       
+@10     type_decl        name: @18      type: @7       srcp: types.h:40     
+@11     integer_type     name: @19      size: @12      algn: 16      
+                         prec: 16       sign: unsigned min : @13     
+                         max : @14     
+@12     integer_cst      type: @20     int: 16
+@13     integer_cst      type: @11     int: 0
+@14     integer_cst      type: @11     int: -1
+@15     function_decl    name: @21      type: @22      srcp: uintn-identity.h:33     
+                         args: @9       link: static  
+@16     identifier_node  strg: __x      lngt: 3       
+@17     integer_type     name: @23      size: @24      algn: 32      
+                         prec: 32       sign: signed   min : @25     
+                         max : @26     
+@18     identifier_node  strg: __uint16_t              lngt: 10      
+@19     type_decl        name: @27      type: @11     
+@20     integer_type     name: @28      size: @29      algn: 128     
+                         prec: 128      sign: unsigned min : @30     
+                         max : @31     
+@21     identifier_node  strg: __uint16_identity       lngt: 17      
+@22     function_type    size: @32      algn: 8        retn: @7      
+                         prms: @33     
+@23     type_decl        name: @34      type: @17     
+@24     integer_cst      type: @20     int: 32
+@25     integer_cst      type: @17     int: -2147483648
+@26     integer_cst      type: @17     int: 2147483647
+@27     identifier_node  strg: short unsigned int      lngt: 18      
+@28     identifier_node  strg: bitsizetype             lngt: 11      
+@29     integer_cst      type: @20     int: 128
+@30     integer_cst      type: @20     int: 0
+@31     integer_cst      type: @20     int: -1
+@32     integer_cst      type: @20     int: 8
+@33     tree_list        valu: @7       chan: @35     
+@34     identifier_node  strg: int      lngt: 3       
+@35     tree_list        valu: @2      
+
+
+;; Function __uint32_identity (null)
+;; enabled by -tree-original
+
+@1      bind_expr        type: @2       body: @3      
+@2      void_type        name: @4       algn: 8       
+@3      return_expr      type: @2       expr: @5      
+@4      type_decl        name: @6       type: @2      
+@5      modify_expr      type: @7       op 0: @8       op 1: @9      
+@6      identifier_node  strg: void     lngt: 4       
+@7      integer_type     name: @10      unql: @11      size: @12     
+                         algn: 32       prec: 32       sign: unsigned 
+                         min : @13      max : @14     
+@8      result_decl      type: @7       scpe: @15      srcp: uintn-identity.h:39     
+                         note: artificial              size: @12     
+                         algn: 32      
+@9      parm_decl        name: @16      type: @7       scpe: @15     
+                         srcp: uintn-identity.h:39     argt: @7      
+                         size: @12      algn: 32       used: 1       
+@10     type_decl        name: @17      type: @7       srcp: types.h:42     
+@11     integer_type     name: @18      size: @12      algn: 32      
+                         prec: 32       sign: unsigned min : @13     
+                         max : @14     
+@12     integer_cst      type: @19     int: 32
+@13     integer_cst      type: @11     int: 0
+@14     integer_cst      type: @11     int: -1
+@15     function_decl    name: @20      type: @21      srcp: uintn-identity.h:39     
+                         args: @9       link: static  
+@16     identifier_node  strg: __x      lngt: 3       
+@17     identifier_node  strg: __uint32_t              lngt: 10      
+@18     type_decl        name: @22      type: @11     
+@19     integer_type     name: @23      size: @24      algn: 128     
+                         prec: 128      sign: unsigned min : @25     
+                         max : @26     
+@20     identifier_node  strg: __uint32_identity       lngt: 17      
+@21     function_type    size: @27      algn: 8        retn: @7      
+                         prms: @28     
+@22     identifier_node  strg: unsigned int            lngt: 12      
+@23     identifier_node  strg: bitsizetype             lngt: 11      
+@24     integer_cst      type: @19     int: 128
+@25     integer_cst      type: @19     int: 0
+@26     integer_cst      type: @19     int: -1
+@27     integer_cst      type: @19     int: 8
+@28     tree_list        valu: @7       chan: @29     
+@29     tree_list        valu: @2      
+
+
+;; Function __uint64_identity (null)
+;; enabled by -tree-original
+
+@1      bind_expr        type: @2       body: @3      
+@2      void_type        name: @4       algn: 8       
+@3      return_expr      type: @2       expr: @5      
+@4      type_decl        name: @6       type: @2      
+@5      modify_expr      type: @7       op 0: @8       op 1: @9      
+@6      identifier_node  strg: void     lngt: 4       
+@7      integer_type     name: @10      unql: @11      size: @12     
+                         algn: 64       prec: 64       sign: unsigned 
+                         min : @13      max : @14     
+@8      result_decl      type: @7       scpe: @15      srcp: uintn-identity.h:45     
+                         note: artificial              size: @12     
+                         algn: 64      
+@9      parm_decl        name: @16      type: @7       scpe: @15     
+                         srcp: uintn-identity.h:45     argt: @7      
+                         size: @12      algn: 64       used: 1       
+@10     type_decl        name: @17      type: @7       srcp: types.h:45     
+@11     integer_type     name: @18      size: @12      algn: 64      
+                         prec: 64       sign: unsigned min : @13     
+                         max : @14     
+@12     integer_cst      type: @19     int: 64
+@13     integer_cst      type: @11     int: 0
+@14     integer_cst      type: @11     int: -1
+@15     function_decl    name: @20      type: @21      srcp: uintn-identity.h:45     
+                         args: @9       link: static  
+@16     identifier_node  strg: __x      lngt: 3       
+@17     identifier_node  strg: __uint64_t              lngt: 10      
+@18     type_decl        name: @22      type: @11     
+@19     integer_type     name: @23      size: @24      algn: 128     
+                         prec: 128      sign: unsigned min : @25     
+                         max : @26     
+@20     identifier_node  strg: __uint64_identity       lngt: 17      
+@21     function_type    size: @27      algn: 8        retn: @7      
+                         prms: @28     
+@22     identifier_node  strg: long unsigned int       lngt: 17      
+@23     identifier_node  strg: bitsizetype             lngt: 11      
+@24     integer_cst      type: @19     int: 128
+@25     integer_cst      type: @19     int: 0
+@26     integer_cst      type: @19     int: -1
+@27     integer_cst      type: @19     int: 8
+@28     tree_list        valu: @7       chan: @29     
+@29     tree_list        valu: @2      
+
+
+;; Function main (null)
+;; enabled by -tree-original
+
+@1      statement_list   0   : @2       1   : @3      
+@2      bind_expr        type: @4       vars: @5       body: @6      
+@3      return_expr      type: @4       expr: @7      
+@4      void_type        name: @8       algn: 8       
+@5      var_decl         name: @9       type: @10      scpe: @11     
+                         srcp: deadlock.c:24           size: @12     
+                         algn: 32       used: 1       
+@6      statement_list   0   : @13      1   : @14      2   : @15     
+                         3   : @16      4   : @17      5   : @18     
+                         6   : @19      7   : @20      8   : @21     
+                         9   : @22      10  : @23      11  : @24     
+                         12  : @25      13  : @26      14  : @27     
+                         15  : @28      16  : @29      17  : @30     
+                         18  : @31      19  : @32      20  : @33     
+                         21  : @34      22  : @35      23  : @36     
+                         24  : @37      25  : @38      26  : @39     
+                         27  : @40     
+@7      modify_expr      type: @10      op 0: @41      op 1: @42     
+@8      type_decl        name: @43      type: @4      
+@9      identifier_node  strg: i        lngt: 1       
+@10     integer_type     name: @44      size: @12      algn: 32      
+                         prec: 32       sign: signed   min : @45     
+                         max : @46     
+@11     function_decl    name: @47      type: @48      srcp: deadlock.c:23     
+                         args: @49      link: extern  
+@12     integer_cst      type: @50     int: 32
+@13     decl_expr        type: @4      
+@14     cond_expr        type: @4       op 0: @51      op 1: @52     
+@15     call_expr        type: @10      fn  : @53      0   : @54     
+                         1   : @55     
+@16     modify_expr      type: @10      op 0: @5       op 1: @42     
+@17     goto_expr        type: @4       labl: @56     
+@18     label_expr       type: @4       name: @57     
+@19     call_expr        type: @10      fn  : @58      0   : @59     
+                         1   : @55     
+@20     postincrement_expr type: @10      op 0: @5       op 1: @60     
+@21     label_expr       type: @4       name: @56     
+@22     cond_expr        type: @4       op 0: @61      op 1: @62     
+                         op 2: @63     
+@23     label_expr       type: @4       name: @64     
+@24     modify_expr      type: @10      op 0: @5       op 1: @42     
+@25     goto_expr        type: @4       labl: @65     
+@26     label_expr       type: @4       name: @66     
+@27     call_expr        type: @10      fn  : @67      0   : @68     
+                         1   : @69      2   : @70      3   : @71     
+@28     postincrement_expr type: @10      op 0: @5       op 1: @60     
+@29     label_expr       type: @4       name: @65     
+@30     cond_expr        type: @4       op 0: @72      op 1: @73     
+                         op 2: @74     
+@31     label_expr       type: @4       name: @75     
+@32     modify_expr      type: @10      op 0: @5       op 1: @42     
+@33     goto_expr        type: @4       labl: @76     
+@34     label_expr       type: @4       name: @77     
+@35     call_expr        type: @10      fn  : @78      0   : @79     
+                         1   : @80     
+@36     postincrement_expr type: @10      op 0: @5       op 1: @60     
+@37     label_expr       type: @4       name: @76     
+@38     cond_expr        type: @4       op 0: @81      op 1: @82     
+                         op 2: @83     
+@39     label_expr       type: @4       name: @84     
+@40     return_expr      type: @4       expr: @85     
+@41     result_decl      type: @10      scpe: @11      srcp: deadlock.c:23     
+                         note: artificial              size: @12     
+                         algn: 32      
+@42     integer_cst      type: @10     int: 0
+@43     identifier_node  strg: void     lngt: 4       
+@44     type_decl        name: @86      type: @10     
+@45     integer_cst      type: @10     int: -2147483648
+@46     integer_cst      type: @10     int: 2147483647
+@47     identifier_node  strg: main     lngt: 4       
+@48     function_type    size: @87      algn: 8        retn: @10     
+                         prms: @88     
+@49     parm_decl        name: @89      type: @10      scpe: @11     
+                         srcp: deadlock.c:23           argt: @10     
+                         size: @12      algn: 32       used: 1       
+@50     integer_type     name: @90      size: @91      algn: 128     
+                         prec: 128      sign: unsigned min : @92     
+                         max : @93     
+@51     eq_expr          type: @10      op 0: @49      op 1: @94     
+@52     modify_expr      type: @10      op 0: @95      op 1: @96     
+@53     addr_expr        type: @97      op 0: @98     
+@54     addr_expr        type: @99      op 0: @100    
+@55     integer_cst      type: @101    int: 0
+@56     label_decl       type: @4       scpe: @11      note: artificial 
+@57     label_decl       type: @4       scpe: @11      note: artificial 
+@58     addr_expr        type: @97      op 0: @98     
+@59     addr_expr        type: @99      op 0: @102    
+@60     integer_cst      type: @10     int: 1
+@61     le_expr          type: @10      op 0: @5       op 1: @103    
+@62     goto_expr        type: @4       labl: @57     
+@63     goto_expr        type: @4       labl: @64     
+@64     label_decl       type: @4       scpe: @11      note: artificial 
+@65     label_decl       type: @4       scpe: @11      note: artificial 
+@66     label_decl       type: @4       scpe: @11      note: artificial 
+@67     addr_expr        type: @104     op 0: @105    
+@68     addr_expr        type: @106     op 0: @107    
+@69     integer_cst      type: @108    int: 0
+@70     addr_expr        type: @109     op 0: @110    
+@71     convert_expr     type: @111     op 0: @112    
+@72     le_expr          type: @10      op 0: @5       op 1: @103    
+@73     goto_expr        type: @4       labl: @66     
+@74     goto_expr        type: @4       labl: @75     
+@75     label_decl       type: @4       scpe: @11      note: artificial 
+@76     label_decl       type: @4       scpe: @11      note: artificial 
+@77     label_decl       type: @4       scpe: @11      note: artificial 
+@78     addr_expr        type: @113     op 0: @114    
+@79     array_ref        type: @115     op 0: @116     op 1: @5      
+@80     integer_cst      type: @117    int: 0
+@81     le_expr          type: @10      op 0: @5       op 1: @103    
+@82     goto_expr        type: @4       labl: @77     
+@83     goto_expr        type: @4       labl: @84     
+@84     label_decl       type: @4       scpe: @11      note: artificial 
+@85     modify_expr      type: @10      op 0: @41      op 1: @42     
+@86     identifier_node  strg: int      lngt: 3       
+@87     integer_cst      type: @50     int: 8
+@88     tree_list        valu: @10      chan: @118    
+@89     identifier_node  strg: argn     lngt: 4       
+@90     identifier_node  strg: bitsizetype             lngt: 11      
+@91     integer_cst      type: @50     int: 128
+@92     integer_cst      type: @50     int: 0
+@93     integer_cst      type: @50     int: -1
+@94     integer_cst      type: @10     int: 2
+@95     var_decl         name: @119     type: @10      srcp: deadlock.c:20     
+                         init: @42      size: @12      algn: 32      
+                         used: 1       
+@96     call_expr        type: @10      fn  : @120     0   : @121    
+@97     pointer_type     size: @122     algn: 64       ptd : @123    
+@98     function_decl    name: @124     type: @123     srcp: pthread.h:725    
+                         body: undefined               link: extern  
+@99     pointer_type     size: @122     algn: 64       ptd : @125    
+@100    var_decl         name: @126     type: @125     srcp: deadlock.c:19     
+                         size: @127     algn: 64       used: 1       
+@101    pointer_type     size: @122     algn: 64       ptd : @128    
+@102    array_ref        type: @125     op 0: @129     op 1: @5      
+@103    integer_cst      type: @10     int: 4
+@104    pointer_type     size: @122     algn: 64       ptd : @130    
+@105    function_decl    name: @131     type: @130     srcp: pthread.h:198    
+                         body: undefined               link: extern  
+@106    pointer_type     size: @122     algn: 64       ptd : @115    
+@107    array_ref        type: @115     op 0: @116     op 1: @5      
+@108    pointer_type     qual:   r      unql: @132     size: @122    
+                         algn: 64       ptd : @133    
+@109    pointer_type     size: @122     algn: 64       ptd : @134    
+@110    function_decl    name: @135     type: @134     srcp: deadlock.c:12     
+                         body: undefined               link: extern  
+@111    pointer_type     size: @122     algn: 64       ptd : @4      
+@112    nop_expr         type: @136     op 0: @5      
+@113    pointer_type     size: @122     algn: 64       ptd : @137    
+@114    function_decl    name: @138     type: @137     srcp: pthread.h:215    
+                         body: undefined               link: extern  
+@115    integer_type     name: @139     unql: @140     size: @122    
+                         algn: 64       prec: 64       sign: unsigned 
+                         min : @141     max : @142    
+@116    var_decl         name: @143     type: @144     srcp: deadlock.c:18     
+                         size: @127     algn: 64       used: 1       
+@117    pointer_type     size: @122     algn: 64       ptd : @111    
+@118    tree_list        valu: @145     chan: @146    
+@119    identifier_node  strg: sleep_seconds           lngt: 13      
+@120    addr_expr        type: @147     op 0: @148    
+@121    nop_expr         type: @149     op 0: @150    
+@122    integer_cst      type: @50     int: 64
+@123    function_type    size: @87      algn: 8        retn: @10     
+                         prms: @151    
+@124    identifier_node  strg: pthread_mutex_init      lngt: 18      
+@125    union_type       name: @152     unql: @153     size: @127    
+                         algn: 64       tag : union    flds: @154    
+@126    identifier_node  strg: food_lock               lngt: 9       
+@127    integer_cst      type: @50     int: 320
+@128    union_type       qual: c        name: @155     unql: @156    
+                         size: @12      algn: 32       tag : union   
+                         flds: @157    
+@129    var_decl         name: @158     type: @159     srcp: deadlock.c:17     
+                         size: @160     algn: 64       used: 1       
+@130    function_type    size: @87      algn: 8        retn: @10     
+                         prms: @161    
+@131    identifier_node  strg: pthread_create          lngt: 14      
+@132    pointer_type     size: @122     algn: 64       ptd : @133    
+@133    union_type       qual: c        name: @162     unql: @163    
+                         size: @164     algn: 64       tag : union   
+                         flds: @165    
+@134    function_type    size: @87      algn: 8        retn: @111    
+                         prms: @166    
+@135    identifier_node  strg: philosopher             lngt: 11      
+@136    integer_type     name: @167     size: @122     algn: 64      
+                         prec: 64       sign: signed   min : @168    
+                         max : @169    
+@137    function_type    size: @87      algn: 8        retn: @10     
+                         prms: @170    
+@138    identifier_node  strg: pthread_join            lngt: 12      
+@139    type_decl        name: @171     type: @115     srcp: pthreadtypes.h:27     
+@140    integer_type     name: @172     size: @122     algn: 64      
+                         prec: 64       sign: unsigned min : @141    
+                         max : @142    
+@141    integer_cst      type: @140    int: 0
+@142    integer_cst      type: @140    int: -1
+@143    identifier_node  strg: philo    lngt: 5       
+@144    array_type       size: @127     algn: 64       elts: @115    
+                         domn: @173    
+@145    pointer_type     size: @122     algn: 64       ptd : @174    
+@146    tree_list        valu: @4      
+@147    pointer_type     size: @122     algn: 64       ptd : @175    
+@148    function_decl    name: @176     type: @175     srcp: stdlib.h:104    
+                         body: undefined               link: extern  
+@149    pointer_type     size: @122     algn: 64       ptd : @177    
+@150    indirect_ref     type: @174     op 0: @178    
+@151    tree_list        valu: @99      chan: @179    
+@152    type_decl        name: @180     type: @125     srcp: pthreadtypes.h:72     
+@153    union_type       size: @127     algn: 64       tag : union   
+                         flds: @154    
+@154    field_decl       name: @181     type: @182     scpe: @153    
+                         srcp: pthreadtypes.h:69       size: @127    
+                         algn: 64       bpos: @92     
+@155    type_decl        name: @183     type: @184     srcp: pthreadtypes.h:36     
+@156    union_type       size: @12      algn: 32       tag : union   
+                         flds: @157    
+@157    field_decl       name: @185     type: @186     scpe: @156    
+                         srcp: pthreadtypes.h:34       size: @12     
+                         algn: 8        bpos: @92     
+@158    identifier_node  strg: chopstick               lngt: 9       
+@159    array_type       size: @160     algn: 64       elts: @125    
+                         domn: @173    
+@160    integer_cst      type: @50     int: 1600
+@161    tree_list        valu: @187     chan: @188    
+@162    type_decl        name: @189     type: @190     srcp: pthreadtypes.h:62     
+@163    union_type       name: @189     size: @164     algn: 64      
+                         tag : union    flds: @165    
+@164    integer_cst      type: @50     int: 448
+@165    field_decl       name: @185     type: @191     scpe: @163    
+                         srcp: pthreadtypes.h:58       size: @164    
+                         algn: 8        bpos: @92     
+@166    tree_list        valu: @111     chan: @146    
+@167    type_decl        name: @192     type: @136    
+@168    integer_cst      type: @136    int: -9223372036854775808
+@169    integer_cst      type: @136    int: 9223372036854775807
+@170    tree_list        valu: @115     chan: @193    
+@171    identifier_node  strg: pthread_t               lngt: 9       
+@172    type_decl        name: @194     type: @140    
+@173    integer_type     size: @122     algn: 64       prec: 64      
+                         sign: signed   min : @195     max : @196    
+@174    pointer_type     size: @122     algn: 64       ptd : @197    
+@175    function_type    size: @87      algn: 8        retn: @10     
+                         prms: @198    
+@176    identifier_node  strg: atoi     lngt: 4       
+@177    integer_type     qual: c        name: @199     unql: @197    
+                         size: @87      algn: 8        prec: 8       
+                         sign: signed   min : @200     max : @201    
+@178    pointer_plus_expr type: @145     op 0: @202     op 1: @203    
+@179    tree_list        valu: @101     chan: @146    
+@180    identifier_node  strg: pthread_mutex_t         lngt: 15      
+@181    identifier_node  strg: __data   lngt: 6       
+@182    record_type      name: @204     size: @127     algn: 64      
+                         tag : struct   flds: @205    
+@183    identifier_node  strg: pthread_mutexattr_t     lngt: 19      
+@184    union_type       name: @155     unql: @156     size: @12     
+                         algn: 32       tag : union    flds: @157    
+@185    identifier_node  strg: __size   lngt: 6       
+@186    array_type       size: @12      algn: 8        elts: @197    
+                         domn: @206    
+@187    pointer_type     qual:   r      unql: @106     size: @122    
+                         algn: 64       ptd : @115    
+@188    tree_list        valu: @108     chan: @207    
+@189    identifier_node  strg: pthread_attr_t          lngt: 14      
+@190    union_type       name: @162     unql: @163     size: @164    
+                         algn: 64       tag : union    flds: @165    
+@191    array_type       size: @164     algn: 8        elts: @197    
+                         domn: @208    
+@192    identifier_node  strg: long int lngt: 8       
+@193    tree_list        valu: @117     chan: @146    
+@194    identifier_node  strg: long unsigned int       lngt: 17      
+@195    integer_cst      type: @209    int: 0
+@196    integer_cst      type: @209    int: 4
+@197    integer_type     name: @199     size: @87      algn: 8       
+                         prec: 8        sign: signed   min : @200    
+                         max : @201    
+@198    tree_list        valu: @149     chan: @146    
+@199    type_decl        name: @210     type: @197    
+@200    integer_cst      type: @197    int: -128
+@201    integer_cst      type: @197    int: 127
+@202    parm_decl        name: @211     type: @145     scpe: @11     
+                         srcp: deadlock.c:23           argt: @145    
+                         size: @122     algn: 64       used: 1       
+@203    integer_cst      type: @209    int: 8
+@204    identifier_node  strg: __pthread_mutex_s       lngt: 17      
+@205    field_decl       name: @212     type: @10      scpe: @182    
+                         srcp: struct_mutex.h:24       size: @12     
+                         algn: 32       bpos: @92     
+@206    integer_type     size: @122     algn: 64       prec: 64      
+                         sign: signed   min : @195     max : @213    
+@207    tree_list        valu: @109     chan: @214    
+@208    integer_type     size: @122     algn: 64       prec: 64      
+                         sign: signed   min : @195     max : @215    
+@209    integer_type     name: @216     size: @122     algn: 64      
+                         prec: 64       sign: unsigned min : @195    
+                         max : @217    
+@210    identifier_node  strg: char     lngt: 4       
+@211    identifier_node  strg: argv     lngt: 4       
+@212    identifier_node  strg: __lock   lngt: 6       
+@213    integer_cst      type: @209    int: 3
+@214    tree_list        valu: @218     chan: @146    
+@215    integer_cst      type: @209    int: 55
+@216    identifier_node  strg: sizetype lngt: 8       
+@217    integer_cst      type: @209    int: -1
+@218    pointer_type     qual:   r      unql: @111     size: @122    
+                         algn: 64       ptd : @4      
+
+
+;; Function philosopher (null)
+;; enabled by -tree-original
+
+@1      bind_expr        type: @2       vars: @3       body: @4      
+@2      void_type        name: @5       algn: 8       
+@3      var_decl         name: @6       type: @7       scpe: @8      
+                         srcp: deadlock.c:40           size: @9      
+                         algn: 32       used: 1       
+@4      statement_list   0   : @10      1   : @11      2   : @12     
+                         3   : @13      4   : @14      5   : @15     
+                         6   : @16      7   : @17      8   : @18     
+                         9   : @19      10  : @20      11  : @21     
+                         12  : @22      13  : @23      14  : @24     
+                         15  : @25      16  : @26      17  : @27     
+                         18  : @28      19  : @29      20  : @30     
+                         21  : @31      22  : @32     
+@5      type_decl        name: @33      type: @2      
+@6      identifier_node  strg: id       lngt: 2       
+@7      integer_type     name: @34      size: @9       algn: 32      
+                         prec: 32       sign: signed   min : @35     
+                         max : @36     
+@8      function_decl    name: @37      type: @38      srcp: deadlock.c:39     
+                         args: @39      link: extern  
+@9      integer_cst      type: @40     int: 32
+@10     decl_expr        type: @2      
+@11     decl_expr        type: @2      
+@12     decl_expr        type: @2      
+@13     decl_expr        type: @2      
+@14     decl_expr        type: @2      
+@15     modify_expr      type: @7       op 0: @3       op 1: @41     
+@16     call_expr        type: @7       fn  : @42      0   : @43     
+                         1   : @3      
+@17     modify_expr      type: @7       op 0: @44      op 1: @3      
+@18     modify_expr      type: @7       op 0: @45      op 1: @46     
+@19     cond_expr        type: @2       op 0: @47      op 1: @48     
+@20     goto_expr        type: @2       labl: @49     
+@21     label_expr       type: @2       name: @50     
+@22     cond_expr        type: @2       op 0: @51      op 1: @52     
+@23     call_expr        type: @2       fn  : @53      0   : @3      
+                         1   : @44      2   : @54     
+@24     call_expr        type: @2       fn  : @55      0   : @3      
+                         1   : @45      2   : @56     
+@25     call_expr        type: @7       fn  : @57      0   : @58     
+                         1   : @3      
+@26     call_expr        type: @7       fn  : @59      0   : @60     
+@27     call_expr        type: @2       fn  : @61      0   : @45     
+                         1   : @44     
+@28     label_expr       type: @2       name: @49     
+@29     cond_expr        type: @2       op 0: @62      op 1: @63     
+                         op 2: @64     
+@30     label_expr       type: @2       name: @65     
+@31     call_expr        type: @7       fn  : @66      0   : @67     
+                         1   : @3      
+@32     return_expr      type: @2       expr: @68     
+@33     identifier_node  strg: void     lngt: 4       
+@34     type_decl        name: @69      type: @7      
+@35     integer_cst      type: @7      int: -2147483648
+@36     integer_cst      type: @7      int: 2147483647
+@37     identifier_node  strg: philosopher             lngt: 11      
+@38     function_type    size: @70      algn: 8        retn: @71     
+                         prms: @72     
+@39     parm_decl        name: @73      type: @71      scpe: @8      
+                         srcp: deadlock.c:39           argt: @71     
+                         size: @74      algn: 64       used: 1       
+@40     integer_type     name: @75      size: @76      algn: 128     
+                         prec: 128      sign: unsigned min : @77     
+                         max : @78     
+@41     nop_expr         type: @7       op 0: @79     
+@42     addr_expr        type: @80      op 0: @81     
+@43     nop_expr         type: @82      op 0: @83     
+@44     var_decl         name: @84      type: @7       scpe: @8      
+                         srcp: deadlock.c:41           size: @9      
+                         algn: 32       used: 1       
+@45     var_decl         name: @85      type: @7       scpe: @8      
+                         srcp: deadlock.c:41           size: @9      
+                         algn: 32       used: 1       
+@46     plus_expr        type: @7       op 0: @3       op 1: @86     
+@47     eq_expr          type: @7       op 0: @45      op 1: @87     
+@48     modify_expr      type: @7       op 0: @45      op 1: @88     
+@49     label_decl       type: @2       scpe: @8       note: artificial 
+@50     label_decl       type: @2       scpe: @8       note: artificial 
+@51     eq_expr          type: @7       op 0: @3       op 1: @86     
+@52     call_expr        type: @89      fn  : @90      0   : @91     
+@53     addr_expr        type: @92      op 0: @93     
+@54     nop_expr         type: @94      op 0: @95     
+@55     addr_expr        type: @92      op 0: @93     
+@56     nop_expr         type: @94      op 0: @96     
+@57     addr_expr        type: @80      op 0: @81     
+@58     nop_expr         type: @82      op 0: @97     
+@59     addr_expr        type: @98      op 0: @99     
+@60     nop_expr         type: @100     op 0: @101    
+@61     addr_expr        type: @102     op 0: @103    
+@62     ne_expr          type: @7       op 0: @104     op 1: @88     
+@63     goto_expr        type: @2       labl: @50     
+@64     goto_expr        type: @2       labl: @65     
+@65     label_decl       type: @2       scpe: @8       note: artificial 
+@66     addr_expr        type: @80      op 0: @81     
+@67     nop_expr         type: @82      op 0: @105    
+@68     modify_expr      type: @71      op 0: @106     op 1: @107    
+@69     identifier_node  strg: int      lngt: 3       
+@70     integer_cst      type: @40     int: 8
+@71     pointer_type     size: @74      algn: 64       ptd : @2      
+@72     tree_list        valu: @71      chan: @108    
+@73     identifier_node  strg: num      lngt: 3       
+@74     integer_cst      type: @40     int: 64
+@75     identifier_node  strg: bitsizetype             lngt: 11      
+@76     integer_cst      type: @40     int: 128
+@77     integer_cst      type: @40     int: 0
+@78     integer_cst      type: @40     int: -1
+@79     convert_expr     type: @109     op 0: @39     
+@80     pointer_type     size: @74      algn: 64       ptd : @110    
+@81     function_decl    name: @111     type: @110     srcp: stdio.h:332    
+                         body: undefined               link: extern  
+@82     pointer_type     qual:   r      unql: @112     size: @74     
+                         algn: 64       ptd : @113    
+@83     addr_expr        type: @114     op 0: @115    
+@84     identifier_node  strg: right_chopstick         lngt: 15      
+@85     identifier_node  strg: left_chopstick          lngt: 14      
+@86     integer_cst      type: @7      int: 1
+@87     integer_cst      type: @7      int: 5
+@88     integer_cst      type: @7      int: 0
+@89     integer_type     name: @116     size: @9       algn: 32      
+                         prec: 32       sign: unsigned min : @117    
+                         max : @118    
+@90     addr_expr        type: @119     op 0: @120    
+@91     nop_expr         type: @89      op 0: @121    
+@92     pointer_type     size: @74      algn: 64       ptd : @122    
+@93     function_decl    name: @123     type: @122     srcp: deadlock.c:13     
+                         body: undefined               link: extern  
+@94     pointer_type     size: @74      algn: 64       ptd : @124    
+@95     addr_expr        type: @125     op 0: @126    
+@96     addr_expr        type: @127     op 0: @128    
+@97     addr_expr        type: @129     op 0: @130    
+@98     pointer_type     size: @74      algn: 64       ptd : @131    
+@99     function_decl    name: @132     type: @131     srcp: unistd.h:460    
+                         body: undefined               link: extern  
+@100    integer_type     name: @133     unql: @89      size: @9      
+                         algn: 32       prec: 32       sign: unsigned 
+                         min : @117     max : @118    
+@101    mult_expr        type: @7       op 0: @134     op 1: @135    
+@102    pointer_type     size: @74      algn: 64       ptd : @136    
+@103    function_decl    name: @137     type: @136     srcp: deadlock.c:14     
+                         body: undefined               link: extern  
+@104    modify_expr      type: @7       op 0: @138     op 1: @139    
+@105    addr_expr        type: @140     op 0: @141    
+@106    result_decl      type: @71      scpe: @8       srcp: deadlock.c:39     
+                         note: artificial              size: @74     
+                         algn: 64      
+@107    integer_cst      type: @71     int: 0
+@108    tree_list        valu: @2      
+@109    integer_type     name: @142     size: @74      algn: 64      
+                         prec: 64       sign: signed   min : @143    
+                         max : @144    
+@110    function_type    size: @70      algn: 8        retn: @7      
+                         prms: @145    
+@111    identifier_node  strg: printf   lngt: 6       
+@112    pointer_type     size: @74      algn: 64       ptd : @113    
+@113    integer_type     qual: c        name: @146     unql: @124    
+                         size: @70      algn: 8        prec: 8       
+                         sign: signed   min : @147     max : @148    
+@114    pointer_type     size: @74      algn: 64       ptd : @149    
+@115    string_cst       type: @149    strg: Philosopher %d is done thinking and now ready to eat.
+  lngt: 55      
+@116    type_decl        name: @150     type: @89     
+@117    integer_cst      type: @89     int: 0
+@118    integer_cst      type: @89     int: -1
+@119    pointer_type     size: @74      algn: 64       ptd : @151    
+@120    function_decl    name: @152     type: @151     srcp: unistd.h:444    
+                         body: undefined               link: extern  
+@121    var_decl         name: @153     type: @7       srcp: deadlock.c:20     
+                         init: @88      size: @9       algn: 32      
+                         used: 1       
+@122    function_type    size: @70      algn: 8        retn: @2      
+                         prms: @154    
+@123    identifier_node  strg: grab_chopstick          lngt: 14      
+@124    integer_type     name: @146     size: @70      algn: 8       
+                         prec: 8        sign: signed   min : @147    
+                         max : @148    
+@125    pointer_type     size: @74      algn: 64       ptd : @155    
+@126    string_cst       type: @155    strg: right    lngt: 7       
+@127    pointer_type     size: @74      algn: 64       ptd : @156    
+@128    string_cst       type: @156    strg: left     lngt: 5       
+@129    pointer_type     size: @74      algn: 64       ptd : @157    
+@130    string_cst       type: @157    strg: Philosopher %d: eating.
+  lngt: 25      
+@131    function_type    size: @70      algn: 8        retn: @7      
+                         prms: @158    
+@132    identifier_node  strg: usleep   lngt: 6       
+@133    type_decl        name: @159     type: @100     srcp: types.h:161    
+@134    minus_expr       type: @7       op 0: @160     op 1: @138    
+@135    integer_cst      type: @7      int: 5000
+@136    function_type    size: @70      algn: 8        retn: @2      
+                         prms: @161    
+@137    identifier_node  strg: down_chopsticks         lngt: 15      
+@138    var_decl         name: @162     type: @7       scpe: @8      
+                         srcp: deadlock.c:41           size: @9      
+                         algn: 32       used: 1       
+@139    call_expr        type: @7       fn  : @163    
+@140    pointer_type     size: @74      algn: 64       ptd : @164    
+@141    string_cst       type: @164    strg: Philosopher %d is done eating.
+  lngt: 32      
+@142    type_decl        name: @165     type: @109    
+@143    integer_cst      type: @109    int: -9223372036854775808
+@144    integer_cst      type: @109    int: 9223372036854775807
+@145    tree_list        valu: @82     
+@146    type_decl        name: @166     type: @124    
+@147    integer_cst      type: @124    int: -128
+@148    integer_cst      type: @124    int: 127
+@149    array_type       size: @167     algn: 8        elts: @124    
+                         domn: @168    
+@150    identifier_node  strg: unsigned int            lngt: 12      
+@151    function_type    size: @70      algn: 8        retn: @89     
+                         prms: @169    
+@152    identifier_node  strg: sleep    lngt: 5       
+@153    identifier_node  strg: sleep_seconds           lngt: 13      
+@154    tree_list        valu: @7       chan: @170    
+@155    array_type       size: @171     algn: 8        elts: @124    
+                         domn: @172    
+@156    array_type       size: @173     algn: 8        elts: @124    
+                         domn: @174    
+@157    array_type       size: @175     algn: 8        elts: @124    
+                         domn: @176    
+@158    tree_list        valu: @100     chan: @108    
+@159    identifier_node  strg: __useconds_t            lngt: 12      
+@160    integer_cst      type: @7      int: 51
+@161    tree_list        valu: @7       chan: @177    
+@162    identifier_node  strg: f        lngt: 1       
+@163    addr_expr        type: @178     op 0: @179    
+@164    array_type       size: @180     algn: 8        elts: @124    
+                         domn: @181    
+@165    identifier_node  strg: long int lngt: 8       
+@166    identifier_node  strg: char     lngt: 4       
+@167    integer_cst      type: @40     int: 440
+@168    integer_type     size: @74      algn: 64       prec: 64      
+                         sign: signed   min : @182     max : @183    
+@169    tree_list        valu: @89      chan: @108    
+@170    tree_list        valu: @7       chan: @184    
+@171    integer_cst      type: @40     int: 56
+@172    integer_type     size: @74      algn: 64       prec: 64      
+                         sign: signed   min : @182     max : @185    
+@173    integer_cst      type: @40     int: 40
+@174    integer_type     size: @74      algn: 64       prec: 64      
+                         sign: signed   min : @182     max : @186    
+@175    integer_cst      type: @40     int: 200
+@176    integer_type     size: @74      algn: 64       prec: 64      
+                         sign: signed   min : @182     max : @187    
+@177    tree_list        valu: @7       chan: @108    
+@178    pointer_type     size: @74      algn: 64       ptd : @188    
+@179    function_decl    name: @189     type: @188     srcp: deadlock.c:15     
+                         body: undefined               link: extern  
+@180    integer_cst      type: @40     int: 256
+@181    integer_type     size: @74      algn: 64       prec: 64      
+                         sign: signed   min : @182     max : @190    
+@182    integer_cst      type: @191    int: 0
+@183    integer_cst      type: @191    int: 54
+@184    tree_list        valu: @94      chan: @108    
+@185    integer_cst      type: @191    int: 6
+@186    integer_cst      type: @191    int: 4
+@187    integer_cst      type: @191    int: 24
+@188    function_type    size: @70      algn: 8        retn: @7      
+@189    identifier_node  strg: food_on_table           lngt: 13      
+@190    integer_cst      type: @191    int: 31
+@191    integer_type     name: @192     size: @74      algn: 64      
+                         prec: 64       sign: unsigned min : @182    
+                         max : @193    
+@192    identifier_node  strg: sizetype lngt: 8       
+@193    integer_cst      type: @191    int: -1
+
+
+;; Function food_on_table (null)
+;; enabled by -tree-original
+
+@1      bind_expr        type: @2       vars: @3       body: @4      
+@2      void_type        name: @5       algn: 8       
+@3      var_decl         name: @6       type: @7       scpe: @8      
+                         srcp: deadlock.c:69           init: @9      
+                         size: @10      algn: 32       used: 1       
+@4      statement_list   0   : @11      1   : @12      2   : @13     
+                         3   : @14      4   : @15      5   : @16     
+                         6   : @17     
+@5      type_decl        name: @18      type: @2      
+@6      identifier_node  strg: food     lngt: 4       
+@7      integer_type     name: @19      size: @10      algn: 32      
+                         prec: 32       sign: signed   min : @20     
+                         max : @21     
+@8      function_decl    name: @22      type: @23      srcp: deadlock.c:68     
+                         link: extern  
+@9      integer_cst      type: @7      int: 50
+@10     integer_cst      type: @24     int: 32
+@11     decl_expr        type: @2      
+@12     decl_expr        type: @2      
+@13     call_expr        type: @7       fn  : @25      0   : @26     
+@14     cond_expr        type: @2       op 0: @27      op 1: @28     
+@15     modify_expr      type: @7       op 0: @29      op 1: @3      
+@16     call_expr        type: @7       fn  : @30      0   : @31     
+@17     return_expr      type: @2       expr: @32     
+@18     identifier_node  strg: void     lngt: 4       
+@19     type_decl        name: @33      type: @7      
+@20     integer_cst      type: @7      int: -2147483648
+@21     integer_cst      type: @7      int: 2147483647
+@22     identifier_node  strg: food_on_table           lngt: 13      
+@23     function_type    unql: @34      size: @35      algn: 8       
+                         retn: @7      
+@24     integer_type     name: @36      size: @37      algn: 128     
+                         prec: 128      sign: unsigned min : @38     
+                         max : @39     
+@25     addr_expr        type: @40      op 0: @41     
+@26     addr_expr        type: @42      op 0: @43     
+@27     gt_expr          type: @7       op 0: @3       op 1: @44     
+@28     postdecrement_expr type: @7       op 0: @3       op 1: @45     
+@29     var_decl         name: @46      type: @7       scpe: @8      
+                         srcp: deadlock.c:70           size: @10     
+                         algn: 32       used: 1       
+@30     addr_expr        type: @40      op 0: @47     
+@31     addr_expr        type: @42      op 0: @43     
+@32     modify_expr      type: @7       op 0: @48      op 1: @29     
+@33     identifier_node  strg: int      lngt: 3       
+@34     function_type    size: @35      algn: 8        retn: @7      
+@35     integer_cst      type: @24     int: 8
+@36     identifier_node  strg: bitsizetype             lngt: 11      
+@37     integer_cst      type: @24     int: 128
+@38     integer_cst      type: @24     int: 0
+@39     integer_cst      type: @24     int: -1
+@40     pointer_type     size: @49      algn: 64       ptd : @50     
+@41     function_decl    name: @51      type: @50      srcp: pthread.h:738    
+                         body: undefined               link: extern  
+@42     pointer_type     size: @49      algn: 64       ptd : @52     
+@43     var_decl         name: @53      type: @52      srcp: deadlock.c:19     
+                         size: @54      algn: 64       used: 1       
+@44     integer_cst      type: @7      int: 0
+@45     integer_cst      type: @7      int: 1
+@46     identifier_node  strg: myfood   lngt: 6       
+@47     function_decl    name: @55      type: @50      srcp: pthread.h:756    
+                         body: undefined               link: extern  
+@48     result_decl      type: @7       scpe: @8       srcp: deadlock.c:68     
+                         note: artificial              size: @10     
+                         algn: 32      
+@49     integer_cst      type: @24     int: 64
+@50     function_type    size: @35      algn: 8        retn: @7      
+                         prms: @56     
+@51     identifier_node  strg: pthread_mutex_lock      lngt: 18      
+@52     union_type       name: @57      unql: @58      size: @54     
+                         algn: 64       tag : union    flds: @59     
+@53     identifier_node  strg: food_lock               lngt: 9       
+@54     integer_cst      type: @24     int: 320
+@55     identifier_node  strg: pthread_mutex_unlock    lngt: 20      
+@56     tree_list        valu: @42      chan: @60     
+@57     type_decl        name: @61      type: @52      srcp: pthreadtypes.h:72     
+@58     union_type       size: @54      algn: 64       tag : union   
+                         flds: @59     
+@59     field_decl       name: @62      type: @63      scpe: @58     
+                         srcp: pthreadtypes.h:69       size: @54     
+                         algn: 64       bpos: @38     
+@60     tree_list        valu: @2      
+@61     identifier_node  strg: pthread_mutex_t         lngt: 15      
+@62     identifier_node  strg: __data   lngt: 6       
+@63     record_type      name: @64      size: @54      algn: 64      
+                         tag : struct   flds: @65     
+@64     identifier_node  strg: __pthread_mutex_s       lngt: 17      
+@65     field_decl       name: @66      type: @7       scpe: @63     
+                         srcp: struct_mutex.h:24       size: @10     
+                         algn: 32       bpos: @38     
+@66     identifier_node  strg: __lock   lngt: 6       
+
+
+;; Function grab_chopstick (null)
+;; enabled by -tree-original
+
+@1      bind_expr        type: @2       body: @3      
+@2      void_type        name: @4       algn: 8       
+@3      statement_list   0   : @5       1   : @6      
+@4      type_decl        name: @7       type: @2      
+@5      call_expr        type: @8       fn  : @9       0   : @10     
+@6      call_expr        type: @8       fn  : @11      0   : @12     
+                         1   : @13      2   : @14      3   : @15     
+@7      identifier_node  strg: void     lngt: 4       
+@8      integer_type     name: @16      size: @17      algn: 32      
+                         prec: 32       sign: signed   min : @18     
+                         max : @19     
+@9      addr_expr        type: @20      op 0: @21     
+@10     addr_expr        type: @22      op 0: @23     
+@11     addr_expr        type: @24      op 0: @25     
+@12     nop_expr         type: @26      op 0: @27     
+@13     parm_decl        name: @28      type: @8       scpe: @29     
+                         srcp: deadlock.c:81           argt: @8      
+                         size: @17      algn: 32       used: 1       
+@14     parm_decl        name: @30      type: @31      scpe: @29     
+                         srcp: deadlock.c:81           argt: @31     
+                         size: @32      algn: 64       used: 1       
+@15     parm_decl        name: @33      type: @8       scpe: @29     
+                         srcp: deadlock.c:81           argt: @8      
+                         size: @17      algn: 32       used: 1       
+@16     type_decl        name: @34      type: @8      
+@17     integer_cst      type: @35     int: 32
+@18     integer_cst      type: @8      int: -2147483648
+@19     integer_cst      type: @8      int: 2147483647
+@20     pointer_type     size: @32      algn: 64       ptd : @36     
+@21     function_decl    name: @37      type: @36      srcp: pthread.h:738    
+                         body: undefined               link: extern  
+@22     pointer_type     size: @32      algn: 64       ptd : @38     
+@23     array_ref        type: @38      op 0: @39      op 1: @15     
+@24     pointer_type     size: @32      algn: 64       ptd : @40     
+@25     function_decl    name: @41      type: @40      srcp: stdio.h:332    
+                         body: undefined               link: extern  
+@26     pointer_type     qual:   r      unql: @42      size: @32     
+                         algn: 64       ptd : @43     
+@27     addr_expr        type: @44      op 0: @45     
+@28     identifier_node  strg: phil     lngt: 4       
+@29     function_decl    name: @46      type: @47      srcp: deadlock.c:81     
+                         args: @13      link: extern  
+@30     identifier_node  strg: hand     lngt: 4       
+@31     pointer_type     size: @32      algn: 64       ptd : @48     
+@32     integer_cst      type: @35     int: 64
+@33     identifier_node  strg: c        lngt: 1       
+@34     identifier_node  strg: int      lngt: 3       
+@35     integer_type     name: @49      size: @50      algn: 128     
+                         prec: 128      sign: unsigned min : @51     
+                         max : @52     
+@36     function_type    size: @53      algn: 8        retn: @8      
+                         prms: @54     
+@37     identifier_node  strg: pthread_mutex_lock      lngt: 18      
+@38     union_type       name: @55      unql: @56      size: @57     
+                         algn: 64       tag : union    flds: @58     
+@39     var_decl         name: @59      type: @60      srcp: deadlock.c:17     
+                         size: @61      algn: 64       used: 1       
+@40     function_type    size: @53      algn: 8        retn: @8      
+                         prms: @62     
+@41     identifier_node  strg: printf   lngt: 6       
+@42     pointer_type     size: @32      algn: 64       ptd : @43     
+@43     integer_type     qual: c        name: @63      unql: @48     
+                         size: @53      algn: 8        prec: 8       
+                         sign: signed   min : @64      max : @65     
+@44     pointer_type     size: @32      algn: 64       ptd : @66     
+@45     string_cst       type: @66     strg: Philosopher %d: got %s chopstick %d
+  lngt: 37      
+@46     identifier_node  strg: grab_chopstick          lngt: 14      
+@47     function_type    size: @53      algn: 8        retn: @2      
+                         prms: @67     
+@48     integer_type     name: @63      size: @53      algn: 8       
+                         prec: 8        sign: signed   min : @64     
+                         max : @65     
+@49     identifier_node  strg: bitsizetype             lngt: 11      
+@50     integer_cst      type: @35     int: 128
+@51     integer_cst      type: @35     int: 0
+@52     integer_cst      type: @35     int: -1
+@53     integer_cst      type: @35     int: 8
+@54     tree_list        valu: @22      chan: @68     
+@55     type_decl        name: @69      type: @38      srcp: pthreadtypes.h:72     
+@56     union_type       size: @57      algn: 64       tag : union   
+                         flds: @58     
+@57     integer_cst      type: @35     int: 320
+@58     field_decl       name: @70      type: @71      scpe: @56     
+                         srcp: pthreadtypes.h:69       size: @57     
+                         algn: 64       bpos: @51     
+@59     identifier_node  strg: chopstick               lngt: 9       
+@60     array_type       size: @61      algn: 64       elts: @38     
+                         domn: @72     
+@61     integer_cst      type: @35     int: 1600
+@62     tree_list        valu: @26     
+@63     type_decl        name: @73      type: @48     
+@64     integer_cst      type: @48     int: -128
+@65     integer_cst      type: @48     int: 127
+@66     array_type       size: @74      algn: 8        elts: @48     
+                         domn: @75     
+@67     tree_list        valu: @8       chan: @76     
+@68     tree_list        valu: @2      
+@69     identifier_node  strg: pthread_mutex_t         lngt: 15      
+@70     identifier_node  strg: __data   lngt: 6       
+@71     record_type      name: @77      size: @57      algn: 64      
+                         tag : struct   flds: @78     
+@72     integer_type     size: @32      algn: 64       prec: 64      
+                         sign: signed   min : @79      max : @80     
+@73     identifier_node  strg: char     lngt: 4       
+@74     integer_cst      type: @35     int: 296
+@75     integer_type     size: @32      algn: 64       prec: 64      
+                         sign: signed   min : @79      max : @81     
+@76     tree_list        valu: @8       chan: @82     
+@77     identifier_node  strg: __pthread_mutex_s       lngt: 17      
+@78     field_decl       name: @83      type: @8       scpe: @71     
+                         srcp: struct_mutex.h:24       size: @17     
+                         algn: 32       bpos: @51     
+@79     integer_cst      type: @84     int: 0
+@80     integer_cst      type: @84     int: 4
+@81     integer_cst      type: @84     int: 36
+@82     tree_list        valu: @31      chan: @68     
+@83     identifier_node  strg: __lock   lngt: 6       
+@84     integer_type     name: @85      size: @32      algn: 64      
+                         prec: 64       sign: unsigned min : @79     
+                         max : @86     
+@85     identifier_node  strg: sizetype lngt: 8       
+@86     integer_cst      type: @84     int: -1
+
+
+;; Function down_chopsticks (null)
+;; enabled by -tree-original
+
+@1      bind_expr        type: @2       body: @3      
+@2      void_type        name: @4       algn: 8       
+@3      statement_list   0   : @5       1   : @6      
+@4      type_decl        name: @7       type: @2      
+@5      call_expr        type: @8       fn  : @9       0   : @10     
+@6      call_expr        type: @8       fn  : @11      0   : @12     
+@7      identifier_node  strg: void     lngt: 4       
+@8      integer_type     name: @13      size: @14      algn: 32      
+                         prec: 32       sign: signed   min : @15     
+                         max : @16     
+@9      addr_expr        type: @17      op 0: @18     
+@10     addr_expr        type: @19      op 0: @20     
+@11     addr_expr        type: @17      op 0: @18     
+@12     addr_expr        type: @19      op 0: @21     
+@13     type_decl        name: @22      type: @8      
+@14     integer_cst      type: @23     int: 32
+@15     integer_cst      type: @8      int: -2147483648
+@16     integer_cst      type: @8      int: 2147483647
+@17     pointer_type     size: @24      algn: 64       ptd : @25     
+@18     function_decl    name: @26      type: @25      srcp: pthread.h:756    
+                         body: undefined               link: extern  
+@19     pointer_type     size: @24      algn: 64       ptd : @27     
+@20     array_ref        type: @27      op 0: @28      op 1: @29     
+@21     array_ref        type: @27      op 0: @28      op 1: @30     
+@22     identifier_node  strg: int      lngt: 3       
+@23     integer_type     name: @31      size: @32      algn: 128     
+                         prec: 128      sign: unsigned min : @33     
+                         max : @34     
+@24     integer_cst      type: @23     int: 64
+@25     function_type    size: @35      algn: 8        retn: @8      
+                         prms: @36     
+@26     identifier_node  strg: pthread_mutex_unlock    lngt: 20      
+@27     union_type       name: @37      unql: @38      size: @39     
+                         algn: 64       tag : union    flds: @40     
+@28     var_decl         name: @41      type: @42      srcp: deadlock.c:17     
+                         size: @43      algn: 64       used: 1       
+@29     parm_decl        name: @44      type: @8       scpe: @45     
+                         srcp: deadlock.c:86           argt: @8      
+                         size: @14      algn: 32       used: 1       
+@30     parm_decl        name: @46      type: @8       scpe: @45     
+                         srcp: deadlock.c:86           argt: @8      
+                         size: @14      algn: 32       used: 1       
+@31     identifier_node  strg: bitsizetype             lngt: 11      
+@32     integer_cst      type: @23     int: 128
+@33     integer_cst      type: @23     int: 0
+@34     integer_cst      type: @23     int: -1
+@35     integer_cst      type: @23     int: 8
+@36     tree_list        valu: @19      chan: @47     
+@37     type_decl        name: @48      type: @27      srcp: pthreadtypes.h:72     
+@38     union_type       size: @39      algn: 64       tag : union   
+                         flds: @40     
+@39     integer_cst      type: @23     int: 320
+@40     field_decl       name: @49      type: @50      scpe: @38     
+                         srcp: pthreadtypes.h:69       size: @39     
+                         algn: 64       bpos: @33     
+@41     identifier_node  strg: chopstick               lngt: 9       
+@42     array_type       size: @43      algn: 64       elts: @27     
+                         domn: @51     
+@43     integer_cst      type: @23     int: 1600
+@44     identifier_node  strg: c1       lngt: 2       
+@45     function_decl    name: @52      type: @53      srcp: deadlock.c:86     
+                         args: @29      link: extern  
+@46     identifier_node  strg: c2       lngt: 2       
+@47     tree_list        valu: @2      
+@48     identifier_node  strg: pthread_mutex_t         lngt: 15      
+@49     identifier_node  strg: __data   lngt: 6       
+@50     record_type      name: @54      size: @39      algn: 64      
+                         tag : struct   flds: @55     
+@51     integer_type     size: @24      algn: 64       prec: 64      
+                         sign: signed   min : @56      max : @57     
+@52     identifier_node  strg: down_chopsticks         lngt: 15      
+@53     function_type    size: @35      algn: 8        retn: @2      
+                         prms: @58     
+@54     identifier_node  strg: __pthread_mutex_s       lngt: 17      
+@55     field_decl       name: @59      type: @8       scpe: @50     
+                         srcp: struct_mutex.h:24       size: @14     
+                         algn: 32       bpos: @33     
+@56     integer_cst      type: @60     int: 0
+@57     integer_cst      type: @60     int: 4
+@58     tree_list        valu: @8       chan: @61     
+@59     identifier_node  strg: __lock   lngt: 6       
+@60     integer_type     name: @62      size: @24      algn: 64      
+                         prec: 64       sign: unsigned min : @56     
+                         max : @63     
+@61     tree_list        valu: @8       chan: @47     
+@62     identifier_node  strg: sizetype lngt: 8       
+@63     integer_cst      type: @60     int: -1
+

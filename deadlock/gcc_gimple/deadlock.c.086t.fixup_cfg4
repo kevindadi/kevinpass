@@ -1,0 +1,235 @@
+
+;; Function main (main, funcdef_no=6, decl_uid=3839, cgraph_uid=6, symbol_order=10)
+
+main (int argn, char * * argv)
+{
+  int i;
+  int D.3878;
+  char * * _1;
+  char * _2;
+  int _3;
+  union pthread_mutex_t * _4;
+  long int _5;
+  void * _6;
+  pthread_t * _7;
+  long unsigned int _8;
+  int _24;
+
+  <bb 2> [0.00%]:
+  gimple_cond <eq_expr, argn_16(D), 2, NULL, NULL>
+    goto <bb 3>; [0.00%]
+  else
+    goto <bb 4>; [0.00%]
+
+  <bb 3> [0.00%]:
+  gimple_assign <pointer_plus_expr, _1, argv_18(D), 8, NULL>
+  gimple_assign <mem_ref, _2, *_1, NULL, NULL>
+  gimple_call <atoi, _3, _2>
+  gimple_assign <ssa_name, sleep_seconds, _3, NULL, NULL>
+
+  <bb 4> [0.00%]:
+  gimple_call <pthread_mutex_init, NULL, &food_lock, 0B>
+  gimple_assign <integer_cst, i_21, 0, NULL, NULL>
+  goto <bb 6>; [0.00%]
+
+  <bb 5> [0.00%]:
+  gimple_assign <addr_expr, _4, &chopstick[i_9], NULL, NULL>
+  gimple_call <pthread_mutex_init, NULL, _4, 0B>
+  gimple_assign <plus_expr, i_30, i_9, 1, NULL>
+
+  <bb 6> [0.00%]:
+  # gimple_phi <i_9, i_21(4), i_30(5)>
+  gimple_cond <le_expr, i_9, 4, NULL, NULL>
+    goto <bb 5>; [0.00%]
+  else
+    goto <bb 7>; [0.00%]
+
+  <bb 7> [0.00%]:
+  gimple_assign <integer_cst, i_22, 0, NULL, NULL>
+  goto <bb 9>; [0.00%]
+
+  <bb 8> [0.00%]:
+  gimple_assign <nop_expr, _5, i_10, NULL, NULL>
+  gimple_assign <nop_expr, _6, _5, NULL, NULL>
+  gimple_assign <addr_expr, _7, &philo[i_10], NULL, NULL>
+  gimple_call <pthread_create, NULL, _7, 0B, philosopher, _6>
+  gimple_assign <plus_expr, i_28, i_10, 1, NULL>
+
+  <bb 9> [0.00%]:
+  # gimple_phi <i_10, i_22(7), i_28(8)>
+  gimple_cond <le_expr, i_10, 4, NULL, NULL>
+    goto <bb 8>; [0.00%]
+  else
+    goto <bb 10>; [0.00%]
+
+  <bb 10> [0.00%]:
+  gimple_assign <integer_cst, i_23, 0, NULL, NULL>
+  goto <bb 12>; [0.00%]
+
+  <bb 11> [0.00%]:
+  gimple_assign <array_ref, _8, philo[i_11], NULL, NULL>
+  gimple_call <pthread_join, NULL, _8, 0B>
+  gimple_assign <plus_expr, i_26, i_11, 1, NULL>
+
+  <bb 12> [0.00%]:
+  # gimple_phi <i_11, i_23(10), i_26(11)>
+  gimple_cond <le_expr, i_11, 4, NULL, NULL>
+    goto <bb 11>; [0.00%]
+  else
+    goto <bb 13>; [0.00%]
+
+  <bb 13> [0.00%]:
+  gimple_assign <integer_cst, _24, 0, NULL, NULL>
+
+gimple_label <<L11>>
+  gimple_return <_24 NULL>
+
+}
+
+
+
+;; Function philosopher (philosopher, funcdef_no=7, decl_uid=3824, cgraph_uid=7, symbol_order=11)
+
+philosopher (void * num)
+{
+  int f;
+  int right_chopstick;
+  int left_chopstick;
+  int i;
+  int id;
+  void * D.3884;
+  long int num.0_1;
+  int sleep_seconds.1_2;
+  unsigned int sleep_seconds.2_3;
+  int _4;
+  int _5;
+  unsigned int _6;
+  void * _20;
+
+  <bb 2> [0.00%]:
+  gimple_assign <nop_expr, num.0_1, num_10(D), NULL, NULL>
+  gimple_assign <nop_expr, id_11, num.0_1, NULL, NULL>
+  gimple_call <printf, NULL, "Philosopher %d is done thinking and now ready to eat.\n", id_11>
+  gimple_assign <ssa_name, right_chopstick_14, id_11, NULL, NULL>
+  gimple_assign <plus_expr, left_chopstick_15, id_11, 1, NULL>
+  gimple_cond <eq_expr, left_chopstick_15, 5, NULL, NULL>
+    goto <bb 3>; [0.00%]
+  else
+    goto <bb 4>; [0.00%]
+
+  <bb 3> [0.00%]:
+  gimple_assign <integer_cst, left_chopstick_16, 0, NULL, NULL>
+
+  <bb 4> [0.00%]:
+  # gimple_phi <left_chopstick_7, left_chopstick_15(2), left_chopstick_16(3)>
+  goto <bb 8>; [0.00%]
+
+  <bb 5> [0.00%]:
+  gimple_cond <eq_expr, id_11, 1, NULL, NULL>
+    goto <bb 6>; [0.00%]
+  else
+    goto <bb 7>; [0.00%]
+
+  <bb 6> [0.00%]:
+  gimple_assign <var_decl, sleep_seconds.1_2, sleep_seconds, NULL, NULL>
+  gimple_assign <nop_expr, sleep_seconds.2_3, sleep_seconds.1_2, NULL, NULL>
+  gimple_call <sleep, NULL, sleep_seconds.2_3>
+
+  <bb 7> [0.00%]:
+  gimple_call <grab_chopstick, NULL, id_11, right_chopstick_14, "right ">
+  gimple_call <grab_chopstick, NULL, id_11, left_chopstick_7, "left">
+  gimple_call <printf, NULL, "Philosopher %d: eating.\n", id_11>
+  gimple_assign <minus_expr, _4, 51, f_18, NULL>
+  gimple_assign <mult_expr, _5, _4, 5000, NULL>
+  gimple_assign <nop_expr, _6, _5, NULL, NULL>
+  gimple_call <usleep, NULL, _6>
+  gimple_call <down_chopsticks, NULL, left_chopstick_7, right_chopstick_14>
+
+  <bb 8> [0.00%]:
+  gimple_call <food_on_table, f_18>
+  gimple_cond <ne_expr, f_18, 0, NULL, NULL>
+    goto <bb 5>; [0.00%]
+  else
+    goto <bb 9>; [0.00%]
+
+  <bb 9> [0.00%]:
+  gimple_call <printf, NULL, "Philosopher %d is done eating.\n", id_11>
+  gimple_assign <integer_cst, _20, 0B, NULL, NULL>
+
+gimple_label <<L7>>
+  gimple_return <_20 NULL>
+
+}
+
+
+
+;; Function food_on_table (food_on_table, funcdef_no=8, decl_uid=3832, cgraph_uid=8, symbol_order=12)
+
+food_on_table ()
+{
+  int myfood;
+  static int food = 50;
+  int D.3888;
+  int food.3_1;
+  int food.4_2;
+  int _3;
+  int _10;
+
+  <bb 2> [0.00%]:
+  gimple_call <pthread_mutex_lock, NULL, &food_lock>
+  gimple_assign <var_decl, food.3_1, food, NULL, NULL>
+  gimple_cond <gt_expr, food.3_1, 0, NULL, NULL>
+    goto <bb 3>; [0.00%]
+  else
+    goto <bb 4>; [0.00%]
+
+  <bb 3> [0.00%]:
+  gimple_assign <var_decl, food.4_2, food, NULL, NULL>
+  gimple_assign <plus_expr, _3, food.4_2, -1, NULL>
+  gimple_assign <ssa_name, food, _3, NULL, NULL>
+
+  <bb 4> [0.00%]:
+  gimple_assign <var_decl, myfood_8, food, NULL, NULL>
+  gimple_call <pthread_mutex_unlock, NULL, &food_lock>
+  gimple_assign <ssa_name, _10, myfood_8, NULL, NULL>
+
+gimple_label <<L2>>
+  gimple_return <_10 NULL>
+
+}
+
+
+
+;; Function grab_chopstick (grab_chopstick, funcdef_no=9, decl_uid=3828, cgraph_uid=9, symbol_order=13)
+
+grab_chopstick (int phil, int c, char * hand)
+{
+  union pthread_mutex_t * _1;
+
+  <bb 2> [0.00%]:
+  gimple_assign <addr_expr, _1, &chopstick[c_2(D)], NULL, NULL>
+  gimple_call <pthread_mutex_lock, NULL, _1>
+  gimple_call <printf, NULL, "Philosopher %d: got %s chopstick %d\n", phil_5(D), hand_6(D), c_2(D)>
+  gimple_return <NULL NULL>
+
+}
+
+
+
+;; Function down_chopsticks (down_chopsticks, funcdef_no=10, decl_uid=3831, cgraph_uid=10, symbol_order=14)
+
+down_chopsticks (int c1, int c2)
+{
+  union pthread_mutex_t * _1;
+  union pthread_mutex_t * _2;
+
+  <bb 2> [0.00%]:
+  gimple_assign <addr_expr, _1, &chopstick[c1_3(D)], NULL, NULL>
+  gimple_call <pthread_mutex_unlock, NULL, _1>
+  gimple_assign <addr_expr, _2, &chopstick[c2_6(D)], NULL, NULL>
+  gimple_call <pthread_mutex_unlock, NULL, _2>
+  gimple_return <NULL NULL>
+
+}
+
+

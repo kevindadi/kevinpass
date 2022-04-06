@@ -1,0 +1,6 @@
+/Users/zhangkaiwen/complier/llvm-tutor/build/CMakeFiles/intrinsics_gen.dir
+/Users/zhangkaiwen/complier/llvm-tutor/build/CMakeFiles/omp_gen.dir
+/Users/zhangkaiwen/complier/llvm-tutor/build/CMakeFiles/acc_gen.dir
+/Users/zhangkaiwen/complier/llvm-tutor/build/CMakeFiles/HelloWorld.dir
+/Users/zhangkaiwen/complier/llvm-tutor/build/CMakeFiles/edit_cache.dir
+/Users/zhangkaiwen/complier/llvm-tutor/build/CMakeFiles/rebuild_cache.dir
